@@ -9,7 +9,7 @@ RUN go version \
     && go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest \
     && xcaddy build --with github.com/caddyserver/forwardproxy=github.com/klzgrad/forwardproxy@naive
 
-FROM alpine:3.15.11
+FROM alpine
 
 EXPOSE 80
 EXPOSE 443
